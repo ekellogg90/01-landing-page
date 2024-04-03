@@ -9,81 +9,53 @@ body {
 }
 
 h1, h2{
-    margin: 20px;
-    text-align: center;
+
 }
 
 section {
-    padding-top: 20px;
-    width: 100%;
-    margin: auto;
-    background-color: blueviolet;
+
 }
 
 header, footer {
-    background-color: rgb(37, 68, 49);
-    color: rgb(223, 202, 20);
-    height: 60px;
-    width: 100%;
-    line-height: 70px;  
+
 }
 
 header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    border-bottom: 10px solid black;
-    text-align: right;
+
 }
 
 footer {
-    position: absolute;
-    margin-top: auto;
-    bottom: auto;
-    text-align: center;
-    border-bottom: 10px solid black;
+
 }
 
 img {
-    display: block;
-    margin: 5px auto;
+
 }
 
 li {
-    display: inline;
-    list-style-type: none;
-    align-items: end;
+
 }
 
 label {
-    display: inline-block;
-    width: 100px;   
+
 }
 
 input, textarea {
-    box-sizing: border-box;
-    width: 300px;
-    border: 1px solid orange;
+
 }
 
 textarea {
-    vertical-align: top;
-    height: 60px;
+
 }
 
 button {
-    height: 40px;
-    width: 120px;
-    background-color: darkslategray;
-    color: white;
-    text-align: center;
+
 }
 
 .text-center {
-    text-align: center;
+
 }
 
 #link-color {
-    color: rgb(226, 135, 15);
+
 }
