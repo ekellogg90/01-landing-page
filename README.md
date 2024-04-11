@@ -12,7 +12,7 @@ N/A
 
 Portfolio Page - <https://ekellogg90.github.io/Eric-Portfolio/>
 
-![image](https://github.com/ekellogg90/Eric-Portfolio/assets/140920153/74e2770d-e03e-4366-a9b0-7ae053d1fdce)
+![image](https://github.com/ekellogg90/Eric-Portfolio/assets/140920153/d3370432-f982-4124-8773-9a0636e4d702)
 
 ## What I learned
 
