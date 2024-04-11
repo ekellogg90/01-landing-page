@@ -2,9 +2,12 @@
     --text-color: #e0eae4;
     --p-color: #03DAC6;
     --outline-color: #2aefcb;
-    --box-hover: rgb(204, 51, 204); 
+    --box-hover: rgb(202, 95, 23); 
+    --my-transition: all 0.5s ease-in-out;
+    --my-backrgound-repeat: no-repeat;
+    --my-background-position: center;
+    --my-background-size: 100% 100%;
 }
-
 
 *::selection {
     color: rgb(89, 225, 71);
@@ -12,11 +15,11 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 63%;
 }
 
 body {
-    background-image: url(./Dark\ Gradient.jpg);
+    background-image: url(./Pics/Dark\ Gradient.jpg);
     color: var(--text-color);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.75rem;
@@ -25,6 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.625rem;
+    margin-top: -2rem;
     color: var(--box-hover);
     font-weight: 700;
     line-height: 1.1;
@@ -56,8 +60,10 @@ h6 {
 
 p {
     margin-bottom: 1rem;
+    margin-right: 180px;
     padding: 1rem;
     color: var(--p-color);
+    text-align: center;
 }
 
 code {
@@ -69,6 +75,7 @@ header {
     margin: 0 auto;
     padding: 2.5rem;
     text-align: center;
+    height: 5%;
 }
 
 header h1.page-title {
@@ -94,6 +101,7 @@ a {
 main {
     width: 96%;
     margin: 2rem auto;
+    height: 95%;
 }
 
 footer {
@@ -101,26 +109,18 @@ footer {
     text-align: center;
 }
 
-/* might not be needed */
-.content {
-    display: flex;
-    flex-flow: column;
+.footer {
+    flex-shrink: 0;
 }
 
 .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 1px;
 }
 
-.row a {
-    width: 50%;
-}
-
-.justify-center {
-    justify-content: center;
-}
-
+/* flex boxes for sections */
 .box-card {
     display: flex;
     flex-direction: column;
@@ -130,7 +130,8 @@ footer {
     color: var(--text-color);
     outline: 2px solid var(--outline-color);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
+    transition: var(--my-transition);
+    overflow: auto;
 }
 
 .box-card .card-header {
@@ -138,7 +139,7 @@ footer {
     padding: .5rem 1rem;
     color: var(--text-color);
     border-radius: 8px;
-    transition: all .5s ease-in-out;
+    transition: var(--my-transition);
     text-align: center;
     overflow: auto;
 }
@@ -152,7 +153,7 @@ footer {
     flex-grow: 1;
 }
 
-/* My work elements */
+/* flex boxes for elements in "My Work" section */
 .work-card1 {
     display: flex;
     flex-direction: row;
@@ -162,11 +163,12 @@ footer {
     color: var(--text-color);
     outline: 2px solid var(--outline-color);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
-    background-image: url(Calendar.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    transition: var(--my-transition);
+    background-image: url(./Pics/Calendar.jpg);
+    background-repeat: var(--my-backrgound-repeat);
+    background-position: var(--my-background-position);
+    background-size: var(--my-background-size);
+    overflow: auto;
 }
 
 .work-card1 .card-header {
@@ -177,7 +179,7 @@ footer {
     border: 2px solid var(--outline-color);
     background-color: lightgray;
     border-radius: 8px;
-    transition: all .5s ease-in-out;
+    transition: var(--my-transition);
     text-align: center;
 }
 
@@ -190,22 +192,24 @@ footer {
     color: var(--text-color);
     outline: 2px solid var(--outline-color);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
-    background-image: url(Devils\ Tower.jpeg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    transition: var(--my-transition);
+    background-image: url(./Pics/Devils\ Tower.jpeg);
+    background-repeat: var(--my-backrgound-repeat);
+    background-position: var(--my-background-position);
+    background-size: var(--my-background-size);
+    overflow: auto;
+    min-width: 50%;
 }
 
 .work-card2 .card-header2 {
     position: relative;
-    margin: 10rem 0 -2rem -2rem;
     padding: .5rem 1rem;
+    margin: 10rem 0 -2rem -2rem;
     color: var(--box-hover);
     border: 2px solid var(--outline-color);
     background-color: lightgray;
     border-radius: 8px;
-    transition: all .5s ease-in-out;
+    transition: var(--my-transition);
     text-align: center;
 }
 
@@ -218,11 +222,13 @@ footer {
     color: var(--text-color);
     outline: 2px solid var(--outline-color);
     outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
-    background-image: url(Nuclear\ Plant.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
+    transition: var(--my-transition);
+    background-image: url(./Pics/Nuclear\ Plant.jpg);
+    background-repeat: var(--my-backrgound-repeat);
+    background-position: var(--my-background-position);
+    background-size: var(--my-background-size);
+    overflow: auto;
+    min-width: 50%;
 }
 
 .work-card3 .card-header2 {
@@ -233,7 +239,7 @@ footer {
     border: 2px solid var(--outline-color);
     background-color: lightgray;
     border-radius: 8px;
-    transition: all .5s ease-in-out;
+    transition: var(--my-transition);
     text-align: center;
 }
 
@@ -243,7 +249,7 @@ footer {
     align-items: center;
     text-align: center;
     /* Adds shadow to my title text */
-    text-shadow: 3px 3px 25px purple, -3px -3px 5px rgb(30, 255, 0);
+    text-shadow: 3px 3px 25px purple, -3px -3px 5px rgb(177, 148, 69);
 }
 
 .float-left {
@@ -252,17 +258,19 @@ footer {
 }
 
 img {
-    border-radius: 5%;
+    border-radius: 10%;
     max-height: 100%;
     background-color: rgb(55, 94, 167);
     box-shadow: 3px 3px 5px;
 }
 
-
+/* helps pictures and links be more lively */
 a:hover {
     color: brown;
+    scale: 101%;
 }
 
+/* adjusts application to screen size */
 @media screen and (min-width: 768px) {
     .card-column {
         flex: 0 0 100%;
@@ -271,13 +279,13 @@ a:hover {
     .card-column:last-child {
         flex-grow: 1;
     }
-    /* .row {
-        flex: 0 0 50%;
-        max-width: 50%;
+     .row {
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     .row:last-child {
         flex-grow: 1;
-    } */
+    } 
 }
 
 @media screen and (min-width: 992px) {
@@ -288,8 +296,8 @@ a:hover {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    /*.row {
-        flex: 0 0 50%;
-        max-width: 50%
-    } */
+    .row {
+        flex: 0 0 100%;
+        max-width: 100%
+    } 
 }
