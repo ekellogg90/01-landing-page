@@ -19,9 +19,12 @@ Portfolio Page - <https://ekellogg90.github.io/Eric-Portfolio/>
 This project really reinforced how to use flexboxes that create a responsive layout to different device sizes.
 
 Some fun things I played with were:
-  Adding a Favicon to my browser tab.
-  Making pictures clickable out to a URL and scalable upon hover.
-  Setting a custom background image for the entire site.
+
+    Adding a Favicon to my browser tab.
+  
+    Making pictures clickable out to a URL and scalable upon hover.
+  
+    Setting a custom background image for the entire site.
   
 
 ## License
